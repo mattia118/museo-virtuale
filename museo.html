@@ -2,46 +2,76 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Museo Virtuale</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #f8f9fa;
-      padding: 30px;
+      background-color: #f0f0f0;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding: 20px;
     }
-    .museo-img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    .audio-player {
+
+    h1 {
+      text-align: center;
       margin-bottom: 40px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    audio {
+      width: 300px;
+      outline: none;
     }
   </style>
 </head>
 <body>
-  <div class="container text-center">
-    <h1 class="mb-5">Museo Virtuale</h1>
 
-    <!-- Prima immagine -->
-    <img src="assets/immagini/Festa-del-grano-Jelsi.jpg" alt="Festa del Grano Jelsi" class="museo-img">
+  <h1>Esplora il Museo Virtuale</h1>
 
-    <!-- Primo audio -->
-    <audio controls class="audio-player">
-      <source src="assets/audio/Sotto un cielo azzur (1).m4a" type="audio/mpeg">
+  <div class="container">
+    <img src="assets/immagini/Festa-del-grano-Jelsi.jpg" alt="Festa del Grano Jelsi">
+    <audio controls>
+      <source src="assets/audio/Durante una solenne.m4a" type="audio/mp4">
       Il tuo browser non supporta l'audio.
     </audio>
+  </div>
 
-    <!-- Seconda immagine -->
-    <img src="assets/immagini/wheat-7202481_1280.jpg" alt="Campo di Grano" class="museo-img">
-
-    <!-- Secondo audio -->
-    <audio controls class="audio-player">
-      <source src="assets/audio/Durante una solenne .m4a" type="audio/mpeg">
+  <div class="container">
+    <img src="assets/immagini/jelsi_festa_sant_anna.jpg" alt="Festa Sant'Anna Jelsi">
+    <audio controls>
+      <source src="assets/audio/Sotto un cielo azzur (1).m4a" type="audio/mp4">
       Il tuo browser non supporta l'audio.
     </audio>
+  </div>
+
+  <div class="container">
+    <img src="assets/immagini/wheat-7202481_1280.jpg" alt="Campo di Grano">
+    <!-- Nessun audio specificato, puoi duplicare uno degli altri o lasciare solo immagine -->
+    <audio controls>
+      <source src="assets/audio/Durante una solenne.m4a" type="audio/mp4">
+      Il tuo browser non supporta l'audio.
+    </audio>
+  </div>
+
+</body>
+</html>
+
 
   </div>
 </body>
