@@ -1,32 +1,86 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <title>Museo Virtuale</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        img {
-            width: 50%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esplora il Museo</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 12px;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    audio {
+      margin: 20px 0;
+    }
+
+    .back-button {
+      margin-top: 40px;
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>Benvenuto nel Museo Virtuale</h1>
+  <h1>Esplora il Museo</h1>
 
-    <img src="assets/immagini/wheat-7202481_1280.jpg" alt="Opera d'arte">
+  <!-- Prima immagine -->
+  <img src="./assets/immagini/Festa-del-grano-Jelsi.jpg" alt="Festa del Grano">
 
-    <h2>Audio Guida</h2>
-    <audio controls>
-        <source src="assets/audio/Sotto%20un%20cielo%20azzur%20(1).m4a" type="audio/mp4">
-        Il tuo browser non supporta l'elemento audio.
-    </audio>
+  <!-- Primo audio -->
+  <audio controls>
+    <source src="./assets/audio/Sotto un cielo azzur (1).m4a" type="audio/mp4">
+    Il tuo browser non supporta l'audio HTML5.
+  </audio>
+
+  <!-- Seconda immagine -->
+  <img src="./assets/immagini/wheat-7202481_1280.jpg" alt="Campo di Grano">
+
+  <!-- Secondo audio -->
+  <audio controls>
+    <source src="./assets/audio/Sotto un cielo azzur (1).m4a" type="audio/mp4">
+    Il tuo browser non supporta l'audio HTML5.
+  </audio>
+
+  <!-- Terza immagine -->
+  <img src="./assets/immagini/jelsi_festa_sant_anna.jpg" alt="Festa Sant'Anna">
+
+  <!-- Terzo audio -->
+  <audio controls>
+    <source src="./assets/audio/Durante una solenne.m4a" type="audio/mp4">
+    Il tuo browser non supporta l'audio HTML5.
+  </audio>
+
+  <!-- Bottone per tornare alla home -->
+  <br>
+  <a href="index.html" class="back-button">Torna alla Home</a>
 
 </body>
 </html>
