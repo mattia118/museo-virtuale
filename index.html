@@ -1,63 +1,54 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Museo – Festa del Grano</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museo Virtuale - Audiolettura</title>
   <style>
     body {
-      font-family: Georgia, serif;
-      background-color: #fff8e1;
-      padding: 30px;
-      color: #4e3b1f;
+      background-image: url('assets/immagini/Festa-del-grano-Jelsi.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: white;
     }
 
     h1 {
-      text-align: center;
-      font-size: 2.5em;
+      font-size: 3em;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      margin-bottom: 30px;
     }
 
-    .media {
-      margin: 40px auto;
-      max-width: 600px;
-      border: 2px solid #d2b48c;
-      border-radius: 20px;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    }
-
-    .media img {
-      width: 100%;
-      height: auto;
+    .button {
+      background-color: rgba(0, 0, 0, 0.6);
+      border: none;
+      padding: 15px 30px;
+      font-size: 20px;
+      cursor: pointer;
       border-radius: 10px;
-      margin-bottom: 15px;
+      color: white;
+      text-decoration: none;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+      transition: background-color 0.3s ease;
     }
 
-    audio {
-      width: 100%;
-      margin-top: 15px;
+    .button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
     }
   </style>
 </head>
 <body>
-  <h1>Esplora il Museo della Festa del Grano</h1>
 
-  <div class="media">
-    <img src="Festa_del_Grano_nel_Borgo.png" alt="Festa del Grano nel Borgo">
-    <audio controls>
-      <source src="Durante_una_solenne.m4a" type="audio/mp4">
-      Il tuo browser non supporta l'elemento audio.
-    </audio>
-  </div>
-
-  <div class="media">
-    <img src="Festa_del_Grano_a_Jelsi.png" alt="Festa del Grano a Jelsi">
-    <audio controls>
-      <source src="Sotto_un_cielo_azzur.m4a" type="audio/mp4">
-      Il tuo browser non supporta l'elemento audio.
-    </audio>
-  </div>
+  <h1>Benvenuto nel Museo Virtuale</h1>
+  <a href="museo.html" class="button">Entra nell'audiolettura</a>
 
 </body>
 </html>
