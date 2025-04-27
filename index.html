@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museo Virtuale</title>
-  <style>
-    body {
-      background-image: url('assets/immagini/Festa-del-grano-Jelsi.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-    }
-
-    .button {
-      background-color: rgba(76, 175, 80, 0.8); /* verde semi-trasparente */
-      border: none;
-      padding: 15px 30px;
-      font-size: 18px;
-      cursor: pointer;
-      border-radius: 8px;
-      color: white;
-      text-decoration: none;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: rgba(76, 175, 80, 1); /* colore più forte al passaggio */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festa del Grano</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff8e1;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: #6d4c41;
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Benvenuto al Museo Virtuale</h1>
-  <a href="museo.html" class="button">Esplora il Museo</a>
+
+    <h1>Festa del Grano</h1>
+
+    <div class="card">
+        <h2>Foto 1</h2>
+        <img src="foto_festa_grano1.png" alt="Foto Festa Grano 1">
+        <h3>Audio: Durante una solenne</h3>
+        <audio controls preload="auto" playsinline>
+            <source src="Durante_una_solenne.m4a" type="audio/mp4">
+            Il tuo browser non supporta l'elemento audio.
+        </audio>
+    </div>
+
+    <div class="card">
+        <h2>Foto 2</h2>
+        <img src="foto_festa_grano2.png" alt="Foto Festa Grano 2">
+        <h3>Audio: Sotto un cielo azzurro</h3>
+        <audio controls preload="auto" playsinline>
+            <source src="Sotto_un_cielo_azzur.m4a" type="audio/mp4">
+            Il tuo browser non supporta l'elemento audio.
+        </audio>
+    </div>
+
 </body>
 </html>
