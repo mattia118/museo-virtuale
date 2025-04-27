@@ -3,52 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museo Virtuale - Audiolettura</title>
+  <title>Audiolettura - Museo Virtuale</title>
   <style>
     body {
-      background-image: url('assets/immagini/Festa-del-grano-Jelsi.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
+      background-color: #f9ecd6;
       margin: 0;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #6c4400;
+      margin-bottom: 40px;
+    }
+    .audio-box {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      text-align: center;
-      font-family: Arial, sans-serif;
-      color: white;
+      gap: 20px;
     }
-
-    h1 {
-      font-size: 3em;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-      margin-bottom: 30px;
+    .audio-box img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
     }
-
-    .button {
-      background-color: rgba(0, 0, 0, 0.6);
-      border: none;
-      padding: 15px 30px;
-      font-size: 20px;
-      cursor: pointer;
-      border-radius: 10px;
-      color: white;
-      text-decoration: none;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: rgba(0, 0, 0, 0.8);
+    audio {
+      width: 300px;
     }
   </style>
 </head>
 <body>
 
-  <h1>Benvenuto nel Museo Virtuale</h1>
-  <a href="museo.html" class="button">Entra nell'audiolettura</a>
+  <h1>Esplora l'audiolettura del Museo Virtuale</h1>
+
+  <div class="audio-box">
+    <img src="assets/immagini/Festa-del-grano-Jelsi.jpg" alt="Festa del Grano a Jelsi">
+    <audio controls>
+      <source src="assets/audio/durante-una-solenne.m4a" type="audio/mp4">
+      Il tuo browser non supporta l'elemento audio.
+    </audio>
+  </div>
+
+  <div class="audio-box">
+    <img src="assets/immagini/jelsi_festa_sant_anna.jpg" alt="Festa di Sant'Anna">
+    <audio controls>
+      <source src="assets/audio/sotto-un-cielo-azzurro.m4a" type="audio/mp4">
+      Il tuo browser non supporta l'elemento audio.
+    </audio>
+  </div>
+
+  <div class="audio-box">
+    <img src="assets/immagini/wheat-7202481_1280.jpg" alt="Campo di grano">
+    <audio controls>
+      <source src="assets/audio/durante-una-solenne.m4a" type="audio/mp4">
+      Il tuo browser non supporta l'elemento audio.
+    </audio>
+  </div>
 
 </body>
 </html>
