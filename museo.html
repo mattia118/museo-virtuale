@@ -9,15 +9,18 @@
       background-color: #f8f9fa;
       padding: 30px;
     }
+    .row {
+      align-items: center;
+      margin-bottom: 50px;
+    }
     .museo-img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       border-radius: 12px;
-      margin-bottom: 20px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     .audio-player {
-      margin-bottom: 40px;
+      width: 100%;
     }
   </style>
 </head>
@@ -25,23 +28,31 @@
   <div class="container text-center">
     <h1 class="mb-5">Museo Virtuale</h1>
 
-    <!-- Prima immagine -->
-    <img src="assets/immagini/Festa-del-grano-Jelsi.jpg" alt="Festa del Grano Jelsi" class="museo-img">
+    <!-- Prima riga: immagine e audio -->
+    <div class="row">
+      <div class="col-md-6">
+        <img src="assets/immagini/Festa-del-grano-Jelsi.jpg" alt="Festa del Grano Jelsi" class="museo-img">
+      </div>
+      <div class="col-md-6">
+        <audio controls class="audio-player">
+          <source src="assets/audio/Sotto un cielo azzur (1).m4a" type="audio/mpeg">
+          Il tuo browser non supporta l'audio.
+        </audio>
+      </div>
+    </div>
 
-    <!-- Primo audio -->
-    <audio controls class="audio-player">
-      <source src="assets/audio/Sotto un cielo azzur (1).m4a" type="audio/mpeg">
-      Il tuo browser non supporta l'audio.
-    </audio>
-
-    <!-- Seconda immagine -->
-    <img src="assets/immagini/wheat-7202481_1280.jpg" alt="Campo di Grano" class="museo-img">
-
-    <!-- Secondo audio -->
-    <audio controls class="audio-player">
-      <source src="assets/audio/Durante una solenne .m4a" type="audio/mpeg">
-      Il tuo browser non supporta l'audio.
-    </audio>
+    <!-- Seconda riga: immagine e audio -->
+    <div class="row">
+      <div class="col-md-6">
+        <img src="assets/immagini/wheat-7202481_1280.jpg" alt="Campo di Grano" class="museo-img">
+      </div>
+      <div class="col-md-6">
+        <audio controls class="audio-player">
+          <source src="assets/audio/Durante una solenne .m4a" type="audio/mpeg">
+          Il tuo browser non supporta l'audio.
+        </audio>
+      </div>
+    </div>
 
   </div>
 </body>
