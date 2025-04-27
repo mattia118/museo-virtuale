@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museo Virtuale</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MUFEG – Festa del Grano</title>
   <style>
-    body {
-      background-image: url('assets/immagini/Festa-del-grano-Jelsi.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
+    body, html {
       margin: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding: 0;
+      height: 100%;
+      font-family: 'Georgia', serif;
+      background-color: #fff8e1;
+    }
+    .container {
       text-align: center;
-      color: white;
-      font-family: Arial, sans-serif;
+      padding: 20px;
     }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    .image {
+      width: 80%;
+      max-width: 600px;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 20px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
     }
-
-    .button {
-      background-color: rgba(76, 175, 80, 0.8); /* verde semi-trasparente */
-      border: none;
-      padding: 15px 30px;
-      font-size: 18px;
-      cursor: pointer;
-      border-radius: 8px;
-      color: white;
-      text-decoration: none;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: rgba(76, 175, 80, 1); /* colore più forte al passaggio */
+    audio {
+      margin: 20px 0;
+      width: 80%;
     }
   </style>
 </head>
 <body>
-  <h1>Benvenuto al Museo Virtuale</h1>
-  <a href="museo.html" class="button">Esplora il Museo</a>
+
+  <div class="container">
+    <h1>Festa del Grano</h1>
+
+    <img src="foto_festa_grano1.png" alt="Festa del Grano immagine 1" class="image">
+
+    <audio controls>
+      <source src="Durante_una_solenne.m4a" type="audio/mp4">
+      Il tuo browser non supporta l'elemento audio.
+    </audio>
+
+    <img src="foto_festa_grano2.png" alt="Festa del Grano immagine 2" class="image">
+
+    <audio controls>
+      <source src="Sotto_un_cielo_azzur.m4a" type="audio/mp4">
+      Il tuo browser non supporta l'elemento audio.
+    </audio>
+
+  </div>
+
 </body>
 </html>
